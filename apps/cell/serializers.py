@@ -1,8 +1,14 @@
-from .models import Cell
+from .models import Cell, Upgrade
 from rest_framework import serializers
 
 
-class CellSerializer(serializers.HyperlinkedModelSerializer):
+class CellSerializer(serializers.ModelSerializer):
     class Meta:
         model = Cell
-        fields = [field.name for field in Cell._meta.get_fields()]
+        fields = 'name damage upgrade_resource'.split()
+
+
+class UpgradeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Upgrade
+        fields = [field.name for field in Upgrade._meta.get_fields()]
