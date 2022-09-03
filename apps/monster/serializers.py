@@ -5,4 +5,5 @@ from rest_framework import serializers
 class MonsterSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Monster
-        fields = "__all__".split()
+        fields = '__all__'
+        lookup_field = 'name'
