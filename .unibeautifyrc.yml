@@ -1,0 +1,12 @@
+{
+  "HTML": {
+    "indent_size": 2,
+    "indent_char": " ",
+    "beautifiers": [
+      "JS-Beautify"
+    ],
+    "unformatted": [
+      "script"
+    ]
+  }
+}

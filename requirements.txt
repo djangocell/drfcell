@@ -1,0 +1,9 @@
+django
+djangorestframework
+django-cors-headers
+dj-database-url
+gunicorn
+markdown
+psycopg2
+requests
+whitenoise
